@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,400,300&display=swap');
+
+:root {
+    --gradient: linear-gradient(135deg, #72edf2 10%, #5151e5 100%);
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.search-container {
+    border-radius: 5px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    color: #222831;
+    height: 200px;
+    width: 580px;
+    box-shadow: 0 0 70px -10px rgba(0, 0, 0, 0.2);
+}
+.button {
+    background-color: #5151e5;
+    color: #ffffff;
+}
+.thin {
+    font-weight: 200;
+}
+
+.container {
+    border-radius: 25px;
+    -webkit-box-shadow: 0 0 70px -10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 70px -10px rgba(0, 0, 0, 0.2);
+    background-color: #222831;
+    color: #ffffff;
+    /* height: min-content; */
+    padding: 0px;
+    width: 600px;
+}
+.small-icon {
+    width: 30px;
+}
+
+.weather-info {
+    z-index: 1;
+    height: 267px;
+}
+
+.weather-gradient {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: var(--gradient);
+    border-radius: 25px;
+    opacity: 0.8;
+}
+
+.date-dayname {
+    margin: 0;
+}
+
+.date-day {
+    display: block;
+}
+
+.location-icon {
+    display: inline-block;
+    height: 0.8em;
+    width: auto;
+    margin-right: 5px;
+}
+
+.weather-temp {
+    margin: 0;
+    font-weight: 700;
+    font-size: 4em;
+}
+
+.weather-card {
+    border-radius: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.weather-desc {
+    margin: 0;
+}
+
+.info-side {
+    padding-top: 5px;
+}
+
+.today-info {
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.min-temp {
+    padding-bottom: 10px;
+}
+
+.today-info > div .title {
+    float: left;
+    font-weight: 700;
+}
+
+.today-info > div .value {
+    float: right;
+}
+
+.weather-day {
+    width: 7rem;
+}
+
+.week-list > li .day-name {
+    display: block;
+    margin: 10px 0 0 0;
+    text-align: center;
+}
+
+.week-list > li .day-icon {
+    display: block;
+    height: 30px;
+    width: auto;
+    margin: 0 auto;
+}
+
+.week-list > li .day-temp {
+    display: block;
+    text-align: center;
+    margin: 10px 0 0 0;
+    font-weight: 700;
+}
+
+.location-container {
+    padding: 25px 35px;
+}
+
+.week-list {
+    list-style-type: none;
+    padding: 0;
+    -webkit-box-shadow: 0 0 50px -5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 50px -5px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    background-color: #222831;
+    color: #fff;
+}
+
+.week-list > li {
+    /* float: left;
+    padding: 15px;
+    -webkit-transition: 200ms ease;
+    -o-transition: 200ms ease;
+    transition: 200ms ease; */
+    border-radius: 10px;
+}
+
+.week-list > li:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    background: #fff;
+    color: #222831;
+
+    -webkit-box-shadow: 0 0 40px -5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 40px -5px rgba(0, 0, 0, 0.2);
+}
+
+.week-list > li.active {
+    background: #fff;
+    color: #222831;
+    border-radius: 10px;
+}
+
+.week-list > li .day-name {
+    display: block;
+    margin: 10px 0 0 0;
+    text-align: center;
+}
+
+.week-list > li .day-temp {
+    display: block;
+    text-align: center;
+    margin: 10px 0 0 0;
+    font-weight: 700;
+}
